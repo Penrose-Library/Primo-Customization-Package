@@ -1,0 +1,181 @@
+/* Fix Non-Chrome Search Bar pushing prmSearchBarAfter */
+prm-search-bar .layout-fill {
+    min-height: initial;
+    height: initial;
+}
+.ebanner{
+display:block; 
+left:25%;
+position: relative;
+margin-top:1em;
+font-size:20px;
+}
+.ebanner p{
+text-decoration: underline;
+}
+@media screen and (max-width:950px) {
+	.ebanner{display:none;}
+}
+/* no need to have those simple search filters */
+.search-extras {display:none !important}
+
+
+.prm-secondary-color, prm-search-bookmark-filter .md-button, prm-topbar .top-nav-bar{
+    background-color: #fff;
+}
+
+/*hide other location */
+prm-search-result-availability-line span[translate="delivery.and.other.locations"] {
+  display: none;
+}
+
+
+/*fix permalink single record view*/
+prm-search-bar {background-color: #fff;}
+
+
+/* Scope options */
+prm-search-bar .prm-top-bar-container .search-element .search-options {
+        background-color: #DD6C53;
+}
+
+
+prm-search-bar .prm-top-bar-container .search-element .search-options:hover {
+        background-color: #D2492A;
+}
+
+
+
+/* Advanced Search Button */
+
+prm-search-bar .search-switch-buttons .switch-to-advanced.md-button {
+	color: #D2492A;
+}
+
+/* Availability Information */
+
+prm-search-result-availability-line .md-button.arrow-link-button .button-content  {
+	color: #21314D;
+}
+
+/* FRBR Link Right Side */
+
+prm-search-result-frbr-line .md-button.arrow-link-button .button-content {
+	color: #21314D;
+}
+
+/* FRBR Link Left Side */
+
+prm-search-result-frbr-line .md-button.arrow-link-button .button-content prm-icon md-icon svg, prm-search-result-frbr-line .md-button.arrow-link-button .button-content .prm-notice {
+    color: #D2492A;
+}
+
+
+/* Media type font */
+
+prm-brief-result-container .media-content-type, md-menu-content .menu-title {
+	color: #000000;
+}
+
+
+prm-topbar .md-button {
+    background-color: #fff;
+    color:#000!important;
+}
+
+md-fab-toolbar md-toolbar {
+    background-color: #fff!important;
+    color:#000!important!
+}
+
+.prm-secondary-color, prm-search-bookmark-filter .md-button, prm-topbar .top-nav-bar{
+    color: #000;
+}
+
+/*the color of the loading animation*/
+prm-spinner.half-transparent .diamond{
+    background-color:#000;
+}
+
+/* remove virtual browse */
+div#virtualBrowse {display:none}
+
+/* warning message for maintenance on top of landing page */
+.default-card.warning {
+  background-color: #425262;
+  color: white;
+  flex: 1;
+}
+
+/* deal with load more content */
+
+button.md-button.button-confirm[translate="nui.brief.results.loadMore"] {
+    width:100%;
+    background-color: grey;
+    color:white;
+}
+
+
+.s-la-widget.s-la-widget-sidetab {
+  position: fixed;
+  z-index: 100000;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #44aaff;
+  padding: 1px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.s-la-widget .s-la-widget-sidetab-a,
+.s-la-widget .s-la-widget-sidetab-a:hover {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border: 4px solid white;
+  font-size: 14px;
+}
+.s-la-widget.s-la-widget-sidetab-right {
+  top: 25%;
+  -ms-transform-origin: left top;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  width: 140px;
+  text-align: center;
+  right: -160px;
+}
+.s-la-widget.s-la-widget-sidetab-right .s-la-widget-sidetab-a {
+  padding-top: 30px;
+  text-align: center;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+.s-la-widget.s-la-widget-sidetab-right:hover {
+  margin-right: 4px !important;
+  text-decoration: none;
+}
+
+
+/* to show borders and backgrouds in action menu */
+#action_list > div > prm-full-view-service-container , #details > div > prm-full-view-service-container , #links > div > prm-full-view-service-container, #getit_link2 > div > prm-full-view-service-container > div.section-body, #citationTrails > div > prm-full-view-service-container > div.section-body, #brief > prm-full-view-service-container > div.section-body, div#services-index, #getit_link1_0 > div > prm-full-view-service-container {
+	border:1px solid #ccc !important;
+	color:#000;
+	background:#FEFEFE;
+	border-radius: 15px;
+	padding: 5px;
+}
+
+
+/* Hide Tags in Detailed Display */
+[aria-label="TAGS"]{display:none;}
+#tags{display:none;}
+[aria-label="Tags"]{display:none;}
+/* Hide Tags in Menu Tab */
+a.md-button[aria-label="TAGS"] {display:none;}
+a.md-button[aria-label="nui.mainmenu.label.tags"] {display:none;}
+/*CSS to Hide Virtual Browse and Virtual Browse Button/link on Full Display */ 
+#virtualBrowse {display:none;}
+button[aria-label="Virtual Browse"]{display:none;}
