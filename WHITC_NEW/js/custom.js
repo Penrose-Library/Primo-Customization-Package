@@ -19,11 +19,11 @@ var app = angular.module('viewCustom', ['customActions','toggleInstitutions']);
 
 
 	/** Bring back the scopes for basic searches plus emergency banner **/
-	app.component('prmSearchBarAfter', {
-		template: '<div class="ebanner hide-xs"><p>For instructions on how to access print materials, see <a href="https://libguides.whitman.edu/c.php?g=1011506&p=7435757">this guide</a>.</p></div>',
-		bindings: {parentCtrl: '<'},
-		controller: 'SearchBarAfterController'
-	});
+//	app.component('prmSearchBarAfter', {
+//		template: '<div class="ebanner hide-xs"><p>For instructions on how to access print materials, see <a href="https://libguides.whitman.edu/c.php?g=1011506&p=7435757">this guide</a>.</p></div>',
+//		bindings: {parentCtrl: '<'},
+//		controller: 'SearchBarAfterController'
+//	});
 
 	app.controller('SearchBarAfterController', ['angularLoad', function (angularLoad) {
 	var vm = this;
