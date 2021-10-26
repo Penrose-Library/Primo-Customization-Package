@@ -3,7 +3,7 @@
   //_paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
-    var su="https://library.whitman.edu/php/plus/js/";
+    var su="https://app.library.whitman.edu/plus/js/";
     _paq.push(['setTrackerUrl', su]);
     _paq.push(['setSiteId', '3']);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
