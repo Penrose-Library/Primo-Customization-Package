@@ -241,9 +241,9 @@ app.run(['$rootScope', '$location', '$window', function($rootScope, $location, $
   $rootScope.$on('$locationChangeSuccess', function(event, newUrl, oldUrl){
 	     _paq.push(['setCustomUrl', newUrl]);
 		_paq.push(['setReferrerUrl', oldUrl]);
-		//if (typeof $location.search().search_scope !== 'undefined') {
-		//		_paq.push(['trackEvent', 'search', 'scope', $location.search().search_scope]);
-		//	 }
+		if (typeof $location.search().search_scope !== 'undefined') {
+				_paq.push(['trackEvent', 'search', 'scope', $location.search().search_scope]);
+			 }
 		_paq.push(['trackPageView']);
 	  });
 }]);
