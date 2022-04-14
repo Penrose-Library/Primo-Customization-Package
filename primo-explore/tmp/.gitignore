@@ -1,1 +1,4 @@
-# Add entries to prefixed with '!' to unhide your view files
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore
