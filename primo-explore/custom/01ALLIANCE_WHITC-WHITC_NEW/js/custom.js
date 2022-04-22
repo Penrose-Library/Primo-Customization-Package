@@ -14,9 +14,19 @@
     "use strict";
     'use strict';
 
+var app = angular.module('viewCustom', ['angularLoad']);
 
-var app = angular.module('viewCustom', ['customActions','toggleInstitutions']);
-
+app.component("prmAlmaOtherMembersAfter", {
+  bindings: {
+    parentCtrl: "<",
+  },
+  controller: [
+    function () {
+      var ctrl = this;
+      ctrl.parentCtrl.isCollapsed = true;
+    },
+  ],
+});
 
 	/** Bring back the scopes for basic searches plus emergency banner **/
 //	app.component('prmSearchBarAfter', {
