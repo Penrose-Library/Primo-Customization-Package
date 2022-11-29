@@ -16,18 +16,29 @@
 
 var app = angular.module('viewCustom', ['angularLoad']);
 
-app.component("prmAlmaOtherMembersAfter", {
-  bindings: {
-    parentCtrl: "<",
-  },
-  controller: [
-    function () {
-      var ctrl = this;
-      ctrl.parentCtrl.isCollapsed = true;
-    },
-  ],
-});
+// app.component("prmAlmaOtherMembersAfter", {
+//  bindings: {
+//    parentCtrl: "<",
+//  },
+//  controller: [
+//    function () {
+//      var ctrl = this;
+//      ctrl.parentCtrl.isCollapsed = true;
+//    },
+//  ],
+// });
 
+app.component("prmAlmaOtherMembersAfter", {
+   bindings: {
+     parentCtrl: "<",
+   },
+   controller: function() {
+     this.$onInit = function () {
+       this.parentCtrl.isCollapsed = true;
+     },
+   },
+});
+	
 	/** Bring back the scopes for basic searches plus emergency banner **/
 //	app.component('prmSearchBarAfter', {
 //		template: '<div class="ebanner hide-xs"><p>For instructions on how to access print materials, see <a href="https://libguides.whitman.edu/c.php?g=1011506&p=7435757">this guide</a>.</p></div>',
